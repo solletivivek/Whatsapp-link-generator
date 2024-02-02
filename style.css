@@ -1,200 +1,200 @@
+:root {
+    font-size: 62.5%;
+}
 
-        :root {
-            font-size: 62.5%;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-size-adjust: none;
-            -webkit-text-size-adjust: none;
-        }
-        
-        button:hover {
-            cursor: pointer;
-            opacity: .7;
-        }
-        
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #2b303a;
-            height: 100vh;
-            flex-direction: column;
-        }
-        
-        body .heading {
-            margin: 3rem 0 5rem 0;
-        }
-        
-        body .title,
-        body .sub-title {
-            font-size: 4rem;
-            text-align: center;
-            font-family: "Poppins", sans-serif;
-            color: #f7f1f4;
-        }
-        
-        body .sub-title {
-            font-size: 1.5rem;
-            opacity: 0.5;
-        }
-        
-        body .user-input-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 40%;
-        }
-        
-        @media screen and (max-width: 50em) {
-            body .user-input-section {
-                width: 100%;
-                margin: 2rem 0 0 0;
-            }
-        }
-        
-        body .user-input-section .user-input {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        
-        body .user-input-section .user-input label {
-            font-size: 1.5rem;
-            font-family: "Poppins", sans-serif;
-        }
-        
-        body .user-input-section .user-input input {
-            width: 80%;
-            max-width: 35rem;
-            font-size: 16px;
-            outline: none;
-            border: none;
-            border-radius: 0.5rem;
-            background-color: #666666;
-            padding: 1.5rem 1rem;
-            margin: 1rem 1rem 2rem 1rem;
-            color: #fff;
-        }
-        
-        body .user-input-section .user-input input::placeholder {
-            color: #fff;
-        }
-        
-        body .button {
-            outline: none;
-            border: none;
-            border-radius: 0.5rem;
-            padding: 1.5rem 2.5rem;
-            margin-bottom: 3rem;
-            background-color: #92dce5;
-            color: black;
-            font-family: sans-serif;
-            font-size: 1.6rem;
-        }
-        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
 
-        body .download-button {
-            outline: none;
-            border: none;
-            border-radius: 0.25rem;
-            padding: 1rem 1rem;
-            margin-bottom: 1.5rem;
-            background-color: #92dce5;
-            color: black;
-            font-family: sans-serif;
-            font-size: 1.6rem;
-        }
-        
+button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
 
-        body .qr-code-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40%;
-        }
-        
-        @media screen and (max-width: 50em) {
-            body .qr-code-container {
-                width: 100%;
-                margin: 8rem 0;
-            }
-        }
-        
-        body .qr-code-container .qr-code {
-            display: flex;
-            border-radius: 1rem;
-            background-color: #7c7c7c33;
-            width: fit-content;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 2rem;
-        }
-        
-        body .qr-code-container .qr-code button {
-            display: flex;
-            justify-content: center;
-            background-color: #1f1f1f;
-            color: #eae6e5;
-            border: none;
-            outline: none;
-            width: 100%;
-            margin-top: 2.5rem;
-            border-radius: 1rem;
-        }
-        
-        body .qr-code-container .qr-code button a {
-            font-family: sans-serif;
-            font-size: 1.5rem;
-            width: 100%;
-            height: 100%;
-            text-decoration: none;
-            color: #eae6e5;
-            padding: 1rem;
-        }
-        .button {
-            border: none;
-            width: 9.5em;
-            height: 2.5em;
-            border-radius: 3em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            background: #1C1A1C;
-            cursor: pointer;
-            transition: all 450ms ease-in-out;
-          }
-          
-          .sparkle {
-            fill: #AAAAAA;
-            transition: all 800ms ease;
-          }
-          
-          .text {
-            font-weight: 600;
-            color: #AAAAAA;
-            font-size: medium;
-          }
-          
-          .button:hover {
-            background: linear-gradient(0deg,#A47CF3,#683FEA);
-            box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-            inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-            0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-            0px 0px 180px 0px #9917FF;
-            transform: translateY(-2px);
-          }
-          
-          .button:hover .text {
-            color: white;
-          }
-          
-          .button:hover .sparkle {
-            fill: white;
-            transform: scale(1.2);
-          } 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b303a;
+    height: 100vh;
+    flex-direction: column;
+}
+
+body .heading {
+    margin: 3rem 0 5rem 0;
+}
+
+body .title,
+body .sub-title {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #f7f1f4;
+}
+
+body .sub-title {
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+body .user-input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+@media screen and (max-width: 50em) {
+    body .user-input-section {
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+}
+
+body .user-input-section .user-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+body .user-input-section .user-input label {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+body .user-input-section .user-input input {
+    width: 80%;
+    max-width: 35rem;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #666666;
+    padding: 1.5rem 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    color: #fff;
+}
+
+body .user-input-section .user-input input::placeholder {
+    color: #fff;
+}
+
+body .button {
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    background-color: #92dce5;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+
+body .download-button {
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #92dce5;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+
+body .qr-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+@media screen and (max-width: 50em) {
+    body .qr-code-container {
+        width: 100%;
+        margin: 8rem 0;
+    }
+}
+
+body .qr-code-container .qr-code {
+    display: flex;
+    border-radius: 1rem;
+    background-color: #7c7c7c33;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+body .qr-code-container .qr-code button {
+    display: flex;
+    justify-content: center;
+    background-color: #1f1f1f;
+    color: #eae6e5;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+}
+
+body .qr-code-container .qr-code button a {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #eae6e5;
+    padding: 1rem;
+}
+
+.button {
+    border: none;
+    width: 9.5em;
+    height: 2.5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+}
+
+.text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+}
+
+.button:hover {
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+        inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+        0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+}
+
+.button:hover .text {
+    color: white;
+}
+
+.button:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+}
