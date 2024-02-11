@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function generate(phoneNumber) {
         qr_code_element.style = "";
 
-        let whatsappLink = "https://wa.me/" + phoneNumber;
+        let whatsappLink = "https://wa.me/91" + phoneNumber;
 
         let qrcode = new QRCode(qr_code_element, {
             text: whatsappLink,
