@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function generate(phoneNumber) {
         qr_code_element.style = "";
 
-        let whatsappLink = "https://wa.me/91" + phoneNumber;
+        // Add default message "hi" to the WhatsApp link
+        let defaultMsg = encodeURIComponent("Hey Hi");
+        let whatsappLink = `https://wa.me/91${phoneNumber}?text=${defaultMsg}`;
 
         let qrcode = new QRCode(qr_code_element, {
             text: whatsappLink,
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let buttonsContainer = document.querySelector(".buttons-container");
         buttonsContainer.innerHTML = "";
 
-        let downloadButton = createButton("Download QR Code", qr_code_element, "qr_code_by_User.png");
+        let downloadButton = createButton("Download QR Code", qr_code_element, "qr_code.png");
         let redirectButton = createButton("Open WhatsApp", null, null, whatsappLink);
 
         buttonsContainer.appendChild(downloadButton);
